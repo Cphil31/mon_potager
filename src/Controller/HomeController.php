@@ -26,8 +26,8 @@ class HomeController extends AbstractController
         $entityManager = $doctrine->getManager();
 
         $user = new User();
-        $user->setEmail('toto@gmail.com');
-        $plaintextPassword = "toto";
+        $user->setEmail('tata@gmail.com');
+        $plaintextPassword = "tata";
 
         // hash the password (based on the security.yaml config for the $user class)
         $hashedPassword = $passwordHasher->hashPassword(
